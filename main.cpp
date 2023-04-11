@@ -1,16 +1,11 @@
-# include "coinChange_recursivePermutations.cpp"
+# include "fibonacci.cpp"
+#include<iostream>
+using namespace std;
 
-// Coin Change Problem
 int main()
 {
-    // `n` coins of given denominations
-    vector<int> S = { 1, 2, 3 };
-
-    // total change required
-    int target = 4;
-
-    cout << "The total number of ways to get the desired change is "
-        << count(S, target);
-
+    int n = 3;
+    int nth_fib = fibonacci_space_optimized(n);
+    cout << nth_fib;
     return 0;
 }
